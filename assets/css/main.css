@@ -4688,3 +4688,9 @@ input, select, textarea {
 		}
 
 	}
+
+	.image-wrapper {
+    max-width: 80%; /* You can change this percentage to make it smaller or larger */
+    margin-left: auto;
+    margin-right: auto;
+	}

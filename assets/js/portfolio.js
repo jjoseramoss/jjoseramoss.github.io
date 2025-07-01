@@ -198,15 +198,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     images.forEach(img => {
-        if (img.src.includes('demo') || img.src.includes('preview')) {
-            // These are placeholder images
-            img.style.filter = 'blur(2px)';
-            img.style.transition = 'filter 0.3s ease';
+        // if (img.src.includes('demo') || img.src.includes('preview')) {
+        //     // These are placeholder images
+        //     img.style.filter = 'blur(2px)';
+        //     img.style.transition = 'filter 0.3s ease';
             
-            img.addEventListener('load', () => {
-                img.style.filter = 'none';
-            });
-        }
+        //     img.addEventListener('load', () => {
+        //         img.style.filter = 'none';
+        //     });
+        // }
         imageObserver.observe(img);
     });
     
