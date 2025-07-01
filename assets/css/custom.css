@@ -1,0 +1,362 @@
+/* Custom Portfolio Styles for Jose Ramos */
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.skills-grid h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #18bfef;
+    padding-bottom: 0.25rem;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    padding: 0.25rem 0;
+    color: #cccccc;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.skills-grid li:before {
+    content: "▶";
+    color: #18bfef;
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+/* Experience Timeline */
+.experience-timeline {
+    margin: 2rem 0;
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.experience-item:before {
+    content: '';
+    position: absolute;
+    left: 130px;
+    top: 0;
+    bottom: -3rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #18bfef, rgba(24, 191, 239, 0.3));
+}
+
+.experience-item:last-child:before {
+    display: none;
+}
+
+.experience-date {
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+    padding-right: 2rem;
+    color: #18bfef;
+    font-weight: bold;
+    position: relative;
+}
+
+.experience-date:after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #18bfef;
+    border-radius: 50%;
+    border: 3px solid #1e1f26;
+}
+
+.experience-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.experience-content h3 {
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.experience-content h4 {
+    color: #18bfef;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.experience-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-content li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #18bfef;
+    font-weight: bold;
+}
+
+/* Leadership Section */
+.leadership-highlight {
+    background: rgba(24, 191, 239, 0.05);
+    border: 1px solid rgba(24, 191, 239, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.leadership-highlight h3 {
+    color: #18bfef;
+    margin-bottom: 0.5rem;
+}
+
+.leadership-highlight h4 {
+    color: #18bfef;
+    margin-bottom: 1.5rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.activity-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.activity-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(24, 191, 239, 0.3);
+}
+
+.activity-item h4 {
+    color: #18bfef;
+    margin-bottom: 0.5rem;
+}
+
+.activity-item p {
+    color: black;
+    line-height: 1.6;
+}
+
+/* Project Cards Enhancement */
+.posts article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.posts article header h2 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.posts article header h2 a:hover {
+    color: #18bfef;
+}
+
+.posts article .date {
+    background: #18bfef;
+    color: #000000;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Contact Form Enhancement */
+#contact form .field input,
+#contact form .field textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+#contact form .field input:focus,
+#contact form .field textarea:focus {
+    border-color: #18bfef;
+    box-shadow: 0 0 10px rgba(24, 191, 239, 0.3);
+}
+
+/* Navigation Enhancement */
+#nav ul.links li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#nav ul.links li a:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #18bfef;
+    transition: width 0.3s ease;
+}
+
+#nav ul.links li a:hover:before,
+#nav ul.links li.active a:before {
+    width: 100%;
+}
+
+/* About Section Enhancement */
+#about .row h3 {
+    color: #18bfef;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+#about .row h3:before {
+    content: attr(data-emoji);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Button Enhancements */
+.button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.button:hover:before {
+    left: 100%;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .experience-item {
+        flex-direction: column;
+    }
+    
+    .experience-item:before {
+        display: none;
+    }
+    
+    .experience-date {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    
+    .experience-date:after {
+        display: none;
+    }
+    
+    .experience-content {
+        padding-left: 0;
+    }
+    
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leadership-highlight {
+        padding: 1rem;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Spacing */
+section {
+    padding: 4rem 0;
+}
+
+section:first-child {
+    padding-top: 2rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1f26;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #18bfef;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a9cd8;
+} 
